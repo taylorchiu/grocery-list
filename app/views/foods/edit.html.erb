@@ -3,11 +3,13 @@
 
 <%= form_for @food do |i| %>
 
-  <%= label_tag(:item, "Item:") %>
-  <%= i.text_field :item %></br>
+  <%= label_tag(:item, "Item:") %> <br>
+  <%= i.text_field :item, :class => "form-control" %></br>
 
-  <%= label_tag(:description, "Description") %>
-  <%= i.text_area :description %></br>
+  <%= label_tag(:description, "Description:") %> <br>
+  <%= i.text_area :description, :class => "form-control" %></br>
 
-  <%= i.submit "Update" %>
+  <%= i.submit "Update", :class => "btn btn-success btn-sm" %>
 <% end %>
+
+<img class="background" src="http://www.myfood4less.com/wp-content/uploads/2012/11/Fruit.jpg"/>

@@ -1,4 +1,76 @@
-// Place all the styles related to the foods controller here.
-// They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.col-sm-6 {
+	text-align: center;
+
+}
+
+h1 {
+	font-family: Georgia;
+	border-bottom: 1px solid black;
+	color: black;
+}
+
+.navbar-default{
+	background-color: #CCCCCC;
+	color: #D9FF00;
+}
+
+.navbar-brand {
+	color: #D9FF00;
+}
+
+.navbar-nav {
+	color: #D9FF00;
+}
+
+.navbar-nav > li > a {
+	color: #D9FF00;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #D9FF00;
+}
+
+.navbar-default .navbar-brand {
+  color: #D9FF00;
+  text-transform: strong;
+}
+
+li {
+	text-align: left;
+	font-size: 20px;
+	font-family: Georgia;
+}
+
+link {
+	color: black;
+}
+
+.btn-primary, .btn-primary:visited, .btn-primary:link, .btn-primary:active {
+	margin: 10px;
+	color: #D9FF00;
+	background-color: #08C9C6;
+	border: none;
+}
+
+.btn-danger, .btn-danger:visited, .btn-danger:link {
+	margin: 10px;
+	color: #D9FF00;
+	background-color: #08C9C6;
+	border: none;
+}
+
+p{
+	font-family: Georgia;
+	font-size: 20px;
+}
+
+.new_food {
+	border-radius: 10px;
+	vertical-align: top;
+}
+
+.background {
+	background-image: url("http://www.myfood4less.com/wp-content/uploads/2012/11/Fruit.jpg")
+}

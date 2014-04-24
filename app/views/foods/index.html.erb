@@ -1,10 +1,19 @@
 <h1>Grocery List: </h1>
+<div class="col-md-8">
+	<br>
+	<img src="http://media.tumblr.com/tumblr_m8bjveCmiA1qa6lp8.gif"/>
+	<br> <h4><em>Need some groceries?</em></h4>
+	<br>
+</div>
+<div class="col-md-4"
+	<p>
+		<%= link_to "New Item", new_food_path, :class => "btn btn-success" %>
 
-<%= link_to "New Item", new_food_path, :class => "btn btn-success" %>
-
-<% @foods.each do |food| %>
-	<li><%= link_to food.item, food_path(food.id) %>
-			<%= link_to "Edit", edit_food_path(food[:id]) %>
-			<%= link_to "Delete", food, method: :delete, data: {confirm: "Are you sure?" }, :class => "btn btn-danger btn-xs" %>
-	</li>
-<% end %>
+		<% @foods.each do |food| %>
+			<li><%= link_to food.item, food_path(food.id) %> <br>
+					<%= link_to "edit", edit_food_path(food[:id]), :class => "btn btn-primary btn-xs" %>
+					<%= link_to "delete", food, method: :delete, data: {confirm: "Are you sure?" }, :class => "btn btn-danger btn-xs" %>
+			</li>
+		<% end %>
+	</p>
+</div>
