@@ -1,0 +1,13 @@
+<h1>Edit An Item</h1>
+
+
+<%= form_for @food do |i| %>
+
+  <%= label_tag(:item, "Item:") %>
+  <%= i.text_field :item %></br>
+
+  <%= label_tag(:description, "Description") %>
+  <%= i.text_area :description %></br>
+
+  <%= i.submit "Update" %>
+<% end %>
